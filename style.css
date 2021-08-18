@@ -62,7 +62,7 @@ body {
          margin: 0.5rem 0;
      }
 
-     p.bold {
+     p .bold {
          font-weight: bold;
      }
 
@@ -105,6 +105,13 @@ body {
          margin-right: 30px;
          margin-left: 30px;
      }
+
+     .searchform {
+        max-width: 420px;
+        height: auto;
+        margin-top: 20px;
+        font-size: 0;
+      }
 
      .gpslogo {
         height: 40px;
@@ -209,7 +216,7 @@ body {
         row-gap: 20px;
         background-color: #f2f2f2;
         border-radius: 15px;
-        padding: 20px 40px 20px 40px;      
+        padding: 20px 40px 20px 40px;
         margin-right: 20px;
         height: 626px;
       }
@@ -251,8 +258,10 @@ body {
 
       aside {
         display: flex;
+        position: absolute;
+        right: 1rem;
         flex-direction: column;
-        max-width: 27%;
+        width: 30%;
         background-color: #f2f2f2;
         border-radius: 15px;
         padding: 20px 40px 20px 40px;
@@ -260,11 +269,56 @@ body {
         margin-left: 20px;
       }
 
-      aside p {
+
+      aside .p {
         align-items: center;
         display: flex;
         justify-content: space-between;
       }
+
+      .fa-chart-line {
+        font-size: 1.4rem;
+      }
+
+      .popularcard a img {
+        width: 37%;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
+      }
+
+      .popularcards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+      }
+
+      .popularcard {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0 12px #bdbdbd;
+        border-radius: 25px;
+        padding: 5px;
+        background-color: white;
+        height: 9rem;
+      }
+
+      .popcardcontain {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 20px;
+      }
+
+      .popularcard a {
+        display: flex;
+      }
+
+      .popstars {
+        margin-left: 0.35rem;
+      }
       
+
 
 
