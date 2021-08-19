@@ -178,7 +178,7 @@ body {
       }
       
       .bouton:hover {
-        box-shadow: 0 0 6px black;
+        background-color: #deebff;
         transition: 0.4s;
       }
       
@@ -238,6 +238,7 @@ body {
         border-radius: 25px;
         box-shadow: 0 0 7px #bdbdbd;
         box-sizing: border-box;
+        margin-top: 25px;
       }
 
       .resultcard a img {
@@ -319,6 +320,86 @@ body {
       .popstars {
         margin-left: 0.35rem;
       }
+
+      #activity {
+          height: auto !important;
+      }
+
+      .activitycards {
+          flex-direction: column;
+          row-gap: 40px;
+          display: none;
+      }
+
+      .imglarge {
+          width: 100%;
+          max-height: 114px;
+          object-fit: cover;
+      }
+
+      .largecarte,
+      .carte1,
+      .carte2,
+      .carte3,
+      .carte4 {
+          max-height: 160px;
+      }
+
+      .carte2 { 
+          height: 160px !important;
+      }
+
+      .largecarte p,
+      .carte1 p,
+      .carte2 p,
+      .carte3 p,
+      .carte4 p {
+          line-height: unset;
+          margin: 0.6rem 0 0 1rem !important;
+      }
+
+      .img1,
+      .img2,
+      .img3,
+      .img4 {
+          height: 114px !important;
+      }
+
+      .colonne {
+          row-gap: 40px;
+          min-width: 100%;
+      }
+
+      footer {
+        position: relative;
+        bottom: 0;
+        background-color: #f2f2f2;
+      }
+
+      .bas_de_pied {
+          display: flex;
+          justify-content: space-around;
+          margin: 0 auto;
+      }
+
+      footer div ul li:first-child {
+        margin-bottom: 1.2rem;
+        font-weight: bold;
+      }
+      
+      footer div {
+        width: 1440px;
+      }
+      
+      footer div ul li {
+        margin-top: 0.5rem;
+      }
+      
+      footer div ul {
+        padding-left: 50px;
+      }
+
+
       
 
 
