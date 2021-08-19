@@ -3,18 +3,9 @@ body {
     margin: 0;
     }
 
-    body { 
-        display: block;
-    }
-
-    .container {
-        max-width: 1440px;
-        margin: 0px auto;
-    }
-
+    
      section {
-         display: block;
-         margin: 0 50px;
+                  margin: 0 50px;
      }
 
      ul li {
@@ -205,20 +196,23 @@ body {
       .central {
         display: flex;
         justify-content: space-between;
-        height: 100%;
         margin: 0 50px 40px 50px;
       }
       
       #accomodations {
-        width: 61%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
+        width: 70%;
+        
         background-color: #f2f2f2;
         border-radius: 15px;
         padding: 20px 40px 20px 40px;
-        margin-right: 20px;
-        height: 626px;
+        margin: 0 20px 0 0;
+        
+      }
+
+      .accomodations-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
       }
       
       .resultcards {
@@ -234,16 +228,15 @@ body {
         width: 30%;
         background-color: white;
         padding: 5px;
-        height: 13.3rem;      
         border-radius: 25px;
         box-shadow: 0 0 7px #bdbdbd;
         box-sizing: border-box;
-        margin-top: 25px;
+        margin: 10px;
       }
 
       .resultcard a img {
         width: 100%;
-        height: 114px;
+        height: 160px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
       }
@@ -258,50 +251,36 @@ body {
       }
 
       aside {
-        display: flex;
-        position: absolute;
-        right: 1rem;
-        flex-direction: column;
+        
         width: 30%;
         background-color: #f2f2f2;
         border-radius: 15px;
         padding: 20px 40px 20px 40px;
-        height: 626px;
         margin-left: 20px;
       }
 
 
-      aside .p {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .fa-chart-line {
+        .fa-chart-line {
         font-size: 1.4rem;
       }
 
-      .popularcard a img {
-        width: 37%;
+      .popularcard img {
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
       }
 
-      .popularcards {
+        .popularcard {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-      }
-
-      .popularcard {
-        display: flex;
-        flex-direction: row;
+        justify-content: flex-start;
         box-shadow: 0 0 12px #bdbdbd;
         border-radius: 25px;
         padding: 5px;
         background-color: white;
-        height: 9rem;
+        width: 90%;
+        margin-bottom: 30px
+        
       }
 
       .popcardcontain {
@@ -318,56 +297,340 @@ body {
 
 
       .popstars {
-        margin-left: 0.35rem;
+        margin-left: 0.35rem;        
       }
 
-      #activity {
+      @media screen and (max-width: 1440px) {
+        .central {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        #accomodations {
+          width: auto;
+          height: auto;
+          margin: 15px 0;
+        }
+      
+        .resultcards {
+          justify-content: space-around;
+          align-content: space-around;
+        }
+      
+        #popular {
+          order: -1;
+          max-width: 100%;
+          height: auto;
+          margin: 15px 0;
+          border-radius: 0;
+        }
+      
+        .popularcards {
+          flex-direction: row;
+          margin: 20px 0;
+        }
+      
+        .popularcard {
+          width: 30%;
+        }
+      
+        .bas_de_pied {
+          width: auto;
+        }
+      
+        footer div {
+          width: auto;
+        }
+      }
+
+      @media screen and (max-width: 1040px) {
+        .central {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        #accomodations {
+          background-color: white;
+        }
+      
+        .cardc p {
+          margin-top: 0.5rem !important;
+        }
+      
+        .actextlrg {
+          margin-top: 0.5rem !important;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        .selected {
+          border-top: none;
+          border-bottom: 4px solid #0065fc;
+          margin-top: 0;
+          padding-right: 0;
+          padding-left: 0;
+          margin-right: 0;
+        }
+      
+        .mainheader {
+          margin: 0;
+        }
+      
+        nav {
+          flex-direction: column;
+          align-items: unset;
+        }
+      
+        .logo {
+          margin-left: 5%;
+        }
+      
+        nav .navboutons {
+          flex-wrap: nowrap;
+          width: 100%;
+        }
+      
+        .navboutons a:last-child {
+          position: absolute;
+          top: 20px;
+          right: 0px;
+        }
+      
+        .navboutons a:nth-child(1) {
+          width: 50%;
+          margin: 0;
+          border-bottom: 4px solid #0065fc;
+        }
+      
+        .navboutons a:nth-child(2) {
+          width: 50%;
+          margin: 0;
+          border-bottom: 4px solid #f2f2f2;
+        }
+      
+        section {
+          margin: 0 20px;
+        }
+      
+            
+              
+        .popularcard {
+          width: auto;
+        }
+      
+        .popularcard a img {
+          width: 15em;
+        }
+      
+        #accomodations {
+          padding: 20px 20px 20px 20px;
+        }
+      
+        .resultcards {
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: auto;
+        }
+      
+        .resultcard {
+          width: 100%;
+          margin: 15px 0;
+        }
+      
+        #activity {
           height: auto !important;
-      }
-
-      .activitycards {
+        }
+      
+        .activitycards {
           flex-direction: column;
           row-gap: 40px;
           display: none;
-      }
-
-      .imglarge {
+        }
+      
+        .imglarge {
           width: 100%;
           max-height: 114px;
           object-fit: cover;
-      }
-
-      .largecarte,
-      .carte1,
-      .carte2,
-      .carte3,
-      .carte4 {
+        }
+      
+        .cardlarge,
+        .carda,
+        .cradb,
+        .cardc,
+        .cardd {
           max-height: 160px;
-      }
-
-      .carte2 { 
+        }
+      
+        .cardb {
           height: 160px !important;
-      }
-
-      .largecarte p,
-      .carte1 p,
-      .carte2 p,
-      .carte3 p,
-      .carte4 p {
+        }
+      
+        .cardlarge p,
+        .carda p,
+        .cardb p,
+        .cardc p,
+        .cardd p {
           line-height: unset;
           margin: 0.6rem 0 0 1rem !important;
-      }
-
-      .img1,
-      .img2,
-      .img3,
-      .img4 {
+        }
+      
+        .imgsmla,
+        .imgsmlb,
+        .imgsmlc,
+        .imgsmld {
           height: 114px !important;
-      }
-
-      .colonne {
+        }
+      
+        .sharedcolumn {
           row-gap: 40px;
           min-width: 100%;
+        }
+      }
+
+      #activity {
+        height: 550px;
+        margin-bottom: 40px;
+      }
+      
+      #activity header {
+        margin-bottom: 20px;
+      }
+      
+      .activitycards {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .cardlarge,
+      .carda,
+      .cardb,
+      .cardc,
+      .cardd {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 12px #bdbdbd;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      
+      .cardlarge p,
+      .carda p,
+      .cardb p,
+      .cardc p,
+      .cardd p {
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+      
+      .cardlarge {
+        height: 30rem;
+      }
+      
+      .imglarge {
+        object-fit: cover;
+        height: 26.3rem;
+      }
+      
+      .sharedcolumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 21%;
+        height: auto;
+      }
+      
+      .carda {
+        height: 15.8rem;
+      }
+      
+      .cardb {
+        height: 11rem;
+      }
+      .cardc {
+        height: 13rem;
+      }
+      
+      .cardd {
+        height: 13.9rem;
+      }
+      
+      .imgsmla {
+        object-fit: cover;
+        height: 12.1rem;
+        width: 100%;
+      }
+      .imgsmlb {
+        object-fit: cover;
+        height: 7.3rem;
+        width: 100%;
+      }
+      .imgsmlc {
+        object-fit: cover;
+        height: 9.3rem;
+        width: 100%;
+      }
+      .imgsmld {
+        object-fit: cover;
+        height: 10.2rem;
+        width: 100%;
+      }
+      
+      @media screen and (max-width: 720px) {
+        .gpslogo {
+          padding: 14px 17px 15px 17px;
+          width: 10%;
+        }
+      
+        .searchform {
+          max-width: 100% !important;
+        }
+      
+        .formbutton {
+          display: none;
+          position: absolute;
+        }
+      
+        .searchbutton {
+          width: 50px;
+          border: 0 none;
+          background-color: #0065fc;
+          height: 48px;
+          border-radius: 11px 11px 11px 11px;
+          color: white;
+          font-weight: bold;
+          display: unset;
+          position: absolute;
+          right: 20px
+        }
+      
+        .filters> p {
+          width:100%
+         }
+      
+        .popularcard a img {
+          width: 37%;
+        }
+      
+        #activity {
+          height: auto;
+        }
+      
+        .bas_de_pied {
+          flex-wrap: wrap;
+        }
+      
+        footer div ul {
+          padding-left: 20px !important;
+          
+        }
+      
+      }
+
+      @media screen and (min-width: 901px) {
+        .cardlarge {
+          width: 23%;
+        }
       }
 
       footer {
