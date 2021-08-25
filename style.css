@@ -110,7 +110,7 @@ font-size: 0;
 .gpslogo {
 height: 40px;
 font-size: 16px;
-padding: 15px 15px 15px 15px;   /* pas bon de melanger px et % */
+padding: 15px 15px 15px 15px;   
 border-top-left-radius: 11px;
 border-bottom-left-radius: 11px;
 background-color: #f2f2f2;
@@ -123,7 +123,7 @@ height: 48px;
 font-weight: bold;
 border: 1px solid #f2f2f2;
 font-family: "Raleway", sans-serif;
-font-size: 1.1rem; /* on ajoute une taille au texte */
+font-size: 1.1rem; 
 }
 
         
@@ -216,7 +216,7 @@ padding-bottom: 20px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-/* height: 30.3rem; */
+
 }
 
 .resultcard {
@@ -281,7 +281,7 @@ box-shadow: 0 0 12px #bdbdbd;
 border-radius: 25px;
 padding: 5px;
 background-color: white;
-width: 100%; /* on change pour 100% */
+width: 100%; 
 margin-bottom: 30px
 }
 
@@ -588,7 +588,7 @@ padding: 20px;
 }
 
 .search-field {
-    border-right: none; /* on enlève la bordure droite du champs de texte */
+    border-right: none; 
 }
     
 .searchbutton {
@@ -632,7 +632,6 @@ p {
 }
 
 aside {
-  order: -1;
     width: 100%;
     margin: 0;
     padding: 20px 0 20px 0;
