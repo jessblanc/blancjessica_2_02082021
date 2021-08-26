@@ -204,7 +204,7 @@ background-color: #f2f2f2;
 border-radius: 15px;
 padding: 20px 40px 20px 40px;
 margin: 0 20px 0 0;
-
+order: -1
 }
 
 .accomodations-container {
@@ -233,7 +233,7 @@ margin: 10px;
 
 .resultcard a img {
 width: 100%;
-height: 160px;
+height: 120px;
 object-fit: cover;
 border-radius: 20px 20px 0 0;
 }
@@ -269,8 +269,8 @@ font-size: 1.4rem;
 }
 
 .popularcard img {
-width: 200px;
-height: 200px;
+width: 130px;
+height: 130px;
 object-fit: cover;
 border-radius: 20px 0 0 20px;
 }
@@ -384,6 +384,7 @@ background-color: #f2f2f2;
 
 .bas_de_pied {
   display: flex;
+  width: 1440px;
   justify-content: space-around;
   margin: 0 auto;
 }
@@ -410,11 +411,21 @@ padding-left: 50px;
                                            /*    MEDIA QUERIES 1440px */
 
 @media screen and (max-width: 1440px) {
-          
+  
+  .container {
+ margin: 0 30px 0 30px
+  } 
+
+.central {
+  flex-direction:column;
+  margin-right: 10px;
+}
+
 #accomodations {
-  width: 55%;  
-  margin: 15px 20px 0 0;
+  width: auto;  
+  margin: 15px 25px 0 0;
   padding: 20px;
+  order: 2
 }
 
 .resultcards {
@@ -430,9 +441,11 @@ padding-left: 50px;
 }
 
 aside {
-  margin: 15px 0 0 20px; 
+  margin: 15px 25px 0 0px; 
   border-radius: 15px;      
-  width: 45%;     
+  width: auto;  
+  order: 1
+  
 }   
 .popularcards {
   margin: 20px 20px;
@@ -460,6 +473,10 @@ footer div {
 display: flex;
 justify-content: space-around; 
 } 
+
+.bas_de_pied {
+width: auto;
+}
 } 
 
                                               /*    MEDIA QUERIES 1040px */
@@ -473,7 +490,6 @@ justify-content: space-around;
 .popularcard a {     
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     width: 100%;           
 }
 
@@ -489,11 +505,56 @@ justify-content: space-around;
 }
 
 .cardlarge {
-    width: 45%;
+    width: 100% !important;
 }
 
 .sharedcolumn {
     width: 45%;
+}
+
+.activitycards {
+  flex-direction: column;
+  row-gap: 40px;
+
+}
+
+.imglarge {
+  width: 100%;
+  max-height: 114px;
+  object-fit: cover;
+}
+
+.cardlarge,
+.carda,
+.cradb,
+.cardc,
+.cardd {
+  max-height: 160px;
+}
+
+.cardb {
+  height: 160px !important;
+}
+
+.cardlarge p,
+.carda p,
+.cardb p,
+.cardc p,
+.cardd p {
+  line-height: unset;
+  margin: 0.6rem 0 0 1rem !important;
+}
+
+.imgsmla,
+.imgsmlb,
+.imgsmlc,
+.imgsmld {
+  height: 114px !important;
+}
+
+.sharedcolumn {
+  row-gap: 40px;
+  min-width: 100%;
 }
 } 
 
@@ -554,8 +615,10 @@ section {
 }
 
 aside {
-  width: 50%;
+  width: auto;
+  margin-right: 0;
 padding: 20px; 
+
 }    
             
 .popularcards { 
@@ -564,6 +627,10 @@ padding: 20px;
          
 #accomodations {
   padding: 20px 20px 20px 20px;
+  width: auto;
+  margin-right: 0;
+ 
+
 }
     
 #activity {
@@ -607,6 +674,12 @@ padding: 20px;
   }      
 } 
 
+aside {
+  order : -1 !important
+}
+
+
+
 
                     /* Media QUERIE 500px */
 
@@ -614,12 +687,12 @@ padding: 20px;
 
 h1 {
     font-size: 1.3em;
-    text-align: center;
+/*     text-align: center; */
 }
 
 p {
     font-size: 1.1em;
-    text-align: center;
+/*     text-align: center; */
 }
 
 
@@ -636,6 +709,7 @@ aside {
     margin: 0;
     padding: 20px 0 20px 0;
     border-radius: 0;
+ 
 }
 .popularcard {
     font-size: 0.9em; 
@@ -652,6 +726,8 @@ aside {
     padding: 20px 0 20px 0;
     border-radius: 0px;
     background-color: #ffffff;
+    order: -1 !important
+
 }
 
 .activitycards {
@@ -699,25 +775,4 @@ footer div ul li {
     padding-left: 0;
   }
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
