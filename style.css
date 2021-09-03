@@ -1,3 +1,5 @@
+/* Base */
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -59,6 +61,7 @@ a:hover {
   transition: 0.4s;
 }
 
+/* Header */
 .mainheader {
   display: flex;
   flex-direction: row;
@@ -93,6 +96,7 @@ nav .navboutons {
   margin-left: 30px;
 }
 
+/* Search and Filters */
 .searchform {
   max-width: 420px;
   height: auto;
@@ -119,7 +123,8 @@ nav .navboutons {
   font-size: 1.1rem;
 }
 
-.formbutton {
+
+.searchbutton {
   width: 24%;
   border: 0 none;
   background-color: #0065fc;
@@ -131,8 +136,8 @@ nav .navboutons {
   padding-top: 4px;
 }
 
-.searchbutton {
-  display: none;
+.formbuttonicon {
+  display: none !important
 }
 
 section i {
@@ -191,7 +196,7 @@ section i {
   column-gap: 40px;
   margin: 0 0 40px 0;
 }
-
+/* Accomodation Section */
 #accomodations {
   width: 70%;
   background-color: #f2f2f2;
@@ -240,6 +245,7 @@ section i {
   margin-left: 0.33rem;
 }
 
+/* Popular Section */
 aside {
   width: 30%;
   background-color: #f2f2f2;
@@ -291,6 +297,7 @@ aside header {
   margin-left: 0.35rem;
 }
 
+/* Activity Section */
 #activity {
   margin-bottom: 40px;
 }
@@ -363,6 +370,7 @@ aside header {
   width: 100%;
 }
 
+/* Footer */
 footer {
   background-color: #f2f2f2;
 }
@@ -633,10 +641,6 @@ footer div ul {
 /* MEDIA QUERIES 720px */
 
 @media screen and (max-width: 720px) {
-/* 
-.container {
-  width: initial !important;
-} */
 
   section {
     margin: 0 30px
@@ -655,6 +659,10 @@ footer div ul {
 
   .formbutton {
     display: none;
+  }
+
+  .formbuttonicon {
+    display: unset !important
   }
 
   .search-field {
@@ -766,6 +774,4 @@ footer div ul {
     padding-left: 0;
   }
 }
-
-
 
